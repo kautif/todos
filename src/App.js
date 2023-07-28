@@ -1,23 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import AddTodo from './components/AddTodo/AddTodo';
+import TodoList from './components/TodoList/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-green-400 h-screen">
+      <p className="w-2/4 mx-auto text-black">This is a simple React Todo application, but I also used this as an opportunity to play with Redux and TailwindCSS and so far, I'm liking them both.</p>
+      <AddTodo />
+      <TodoList />
     </div>
   );
 }
